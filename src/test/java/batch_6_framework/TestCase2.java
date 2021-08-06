@@ -59,4 +59,21 @@ public class TestCase2 extends BasePage {
 
 	}
 
+	
+	@Test(priority = 0, enabled = true, groups = "sanity")
+	public void NegativeTest() {
+
+		home.clickOnLoginButton();
+
+		// enter userName / Password
+		login.login(BoraTech_TestData.userName_testAccount, "invalidPassword");
+
+		String messageFromUI = "invlaid creditial";
+
+		AssertJUnit.assertEquals(messageFromUI, "invalid");
+
+//		dashboard.verifyPage();
+
+	}
+	
 }
