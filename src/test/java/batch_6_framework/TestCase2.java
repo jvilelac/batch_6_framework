@@ -8,6 +8,11 @@ import utilityLibrary.BasePage;
 
 public class TestCase2 extends BasePage {
 
+	public void testGit() {
+		
+	}
+	
+	
 	@Test(priority = 15, enabled = true, groups = "regression")
 	public void verifyExpirence() {
 
