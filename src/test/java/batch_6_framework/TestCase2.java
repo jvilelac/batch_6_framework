@@ -33,7 +33,7 @@ public class TestCase2 extends BasePage {
 		edu.addEducation();
 	}
 
-	@Test(priority = -3, groups = "sanity")
+	@Test(priority = -1, groups = "sanity")
 	public void verifyLogin() {
 
 		home.clickOnLoginButton();
